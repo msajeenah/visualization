@@ -44,7 +44,7 @@ lottie_url = "https://assets7.lottiefiles.com/private_files/lf30_gpi1jcpe.json"
 lottie_conclusion = load_lottieurl(lottie_url)
 
 #Team logo 
-img1 = Image.open("logo/GT.png")
+img1 = Image.open("beesline.png")
 img2 = Image.open("logo/LSG.png")
 img3 = Image.open("logo/RR.png")
 img4 = Image.open("logo/RCB.png")
@@ -61,7 +61,7 @@ img11 = Image.open("logo/IPL.png")
 with st.sidebar:
     selected = option_menu(
                 menu_title=None,  # required
-                options=["Home"],  # required
+                options=["Home","Social Media Analysis","Market Basket Analysis"],  # required
                 icons=["house",],  # optional0
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
