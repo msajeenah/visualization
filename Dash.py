@@ -13,7 +13,7 @@ import wikipediaapi
 import wikipedia
 
 
-st.set_page_config(page_title="IPL 2022 Dashboard", page_icon=":mortar_board:", layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(page_title="Beesline Dashboard", page_icon=":mortar_board:", layout="wide",initial_sidebar_state="expanded")
 
 #dataset 
 df = pd.read_csv('IPL_Matches_2022.csv')
@@ -70,7 +70,7 @@ with st.sidebar:
 if selected == "Home":
     with st.container():
                 
-        st.title("IPL Analysis Dashboard 2022")
+        st.title("Beesline Analysis Dashboard 2023")
         st_lottie(lottie_anime,height=300)
             
                 
@@ -82,8 +82,7 @@ if selected == "Home":
                 st.header("Welcome !")
                 st.write("""
 
-                -   In this analysis, I used the IPL_Matches_2022.csv file from the kaggle Dataset
-                -   This is a Dashboard for 59 group stage matches
+                -   In this analysis, I used the Sampled_data.csv file from the kaggle Dataset
                 -   In this data Analysis,We will be using various Libraries such as pandas, Numpy, Seaborn & Matplotlib""")
             with right_column:
                 st.image(img11,width=160)
