@@ -54,7 +54,7 @@ img7 = Image.open("logo/PBKS.png")
 img8 = Image.open("logo/SRH.png")
 img9 = Image.open("logo/CSK.png")
 img10 = Image.open("logo/MI.png")
-img11 = Image.open("logo/IPL.png")
+img11 = Image.open("beesline.png")
 
 #creating sidebar menu
 
