@@ -61,8 +61,8 @@ img11 = Image.open("logo/IPL.png")
 with st.sidebar:
     selected = option_menu(
                 menu_title=None,  # required
-                options=["Home", "Gujarat Titans", "Lucknow Super Giants", "Rajasthan Royals", "Royal Challenger Bangalore","Delhi Capitals", "Kolkata Knight Riders","Punjab Kings", "Sunrisers Hyderabad","Chennai Super Kings", "Mumbai Indians"],  # required
-                icons=["house", "book", "book","book", "book","book", "book","book", "book","book", "book",],  # optional0
+                options=["Home"],  # required
+                icons=["house",],  # optional0
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
     )
