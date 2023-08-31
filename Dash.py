@@ -16,7 +16,7 @@ import wikipedia
 st.set_page_config(page_title="IPL 2022 Dashboard", page_icon=":mortar_board:", layout="wide",initial_sidebar_state="expanded")
 
 #dataset 
-df = pd.read_csv('IPL_Matches_2022.csv')
+df = pd.read_csv('sampled_data.csv')
 
 # Use for lottie animation
 
@@ -108,7 +108,7 @@ if selected == "Home":
         st.write('---')
 
         st.header("Lets check team ranking")
-        df = pd.read_csv('IPL_Matches_2022.csv')
+        df = pd.read_csv('sampled_data.csv')
         Winner_df = df.groupby('WinningTeam')[['ID']].count()
         Winner_df = Winner_df.sort_values('ID', ascending=False).reset_index()
         Winner_df.rename(columns = {'ID':'Wins','WinningTeam':'Teams'},inplace=True)
